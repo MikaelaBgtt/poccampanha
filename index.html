@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Campanha</title>
+      </head>
+      <body>
+        <h1>Criação de Campanha</h1>
+        
+        <form id="formularioCampanha">
+          <label for="nomeCampanha">Nome da Campanha:</label>
+          <input type="text" id="nomeCampanha" required><br>
+
+          <label for="qtdeCliquesMax">Quantidade de cliques máxima:</label>
+          <input type="number" id="qtdeCliquesMax" required><br>
+
+          <label for="qtdeCliquesMax">Cadastro de links (separe por vírgula):</label>
+          <input type="textarea" id="links" required><br>
+      
+          <button type="button" onclick="gerarLink()">Gerar link de campanha</button>
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+        <script src="index.js"></script>
+      </body>
+      </html>
+</html>
