@@ -1,0 +1,78 @@
+.col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 10px;
+}
+#coluna1{
+    padding: 20px;
+    border: 5px solid rgb(236, 189, 255);
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(116, 13, 160);
+
+
+}
+#coluna0{
+    display: flex;
+    width: 700px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+
+}
+a{
+    display: flex;
+    flex-direction: column;
+    
+}
+#links{
+    
+    width: 200px;
+    height: 60px;
+}
+
+#num3{
+    display: flex;
+}
+#linha{
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center
+}
+:root{
+    background-color: blueviolet;
+}
+label{
+    color: white;
+}
+h2{
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Russo One', sans-serif;
+}
+img{
+    width: 200px;
+    height: 200px;
+    opacity: 0.89;
+}
+#num2{
+    overflow: auto;
+    width: 170px;
+    height: 50px;
+    margin-top: 5px;
+   
+    color: white;
+    padding: 4px;
+    border-radius: 7px;
+}
+#qtdeCliquesMax{
+    width: 100px;
+}

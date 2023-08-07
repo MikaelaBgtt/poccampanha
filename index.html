@@ -3,26 +3,68 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Campanha</title>
+        <title>Criar Campanha</title>
+        <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Russo+One&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./pencil-outline.svg" type="image/x-icon" />
+
+
       </head>
-      <body>
-        <h1>Criação de Campanha</h1>
+      <body style="background-color: blueviolet;">
+      <div class="container text-center">
+                 
+        <div class="row" id="linha">
+          <div class="column" id="coluna0">
+            <div class="text-center">
+              <img src="./[CITYPNG.COM]HD White Outline Short Pencil Icon PNG - 1025x1025.png" class="rounded" alt="pencl">
+            </div>
+            <h1 style="color: rgb(245, 236, 255);margin-top: 30px; margin-bottom: 25px; font-family: 'Roboto Mono', monospace;
+            font-family: 'Russo One', sans-serif;">Criação de Campanha</h1>
+            
+          </div>
+          
+          <div class="col" id="coluna1">
         
         <form id="formularioCampanha">
-          <label for="nomeCampanha">Nome da Campanha:</label>
-          <input type="text" id="nomeCampanha" required><br>
+          <div class="col">
+          <label for="nomeCampanha" class="form-label">Nome da Campanha:</label>
+          <input type="text" id="nomeCampanha" class="form-control" required><br>
+          </div>
 
-          <label for="qtdeCliquesMax">Quantidade de cliques máxima:</label>
-          <input type="number" id="qtdeCliquesMax" required><br>
+          <div class="col">
+          <label for="qtdeCliquesMax" class="form-label">Quantidade de cliques máxima *:</label>
+          <input type="number" id="qtdeCliquesMax" class="form-control" required><br>
+          </div>
 
-          <label for="qtdeCliquesMax">Cadastro de links (separe por vírgula):</label>
-          <input type="textarea" id="links" required><br>
-      
-          <button type="button" onclick="gerarLink()">Gerar link de campanha</button>
+          <div class="col">
+          <label for="links de camapanha" class="form-label">Cadastro de links (separe por vírgula) *:</label>
+          <textarea class="form-control" id="links"></textarea><br>
+          </div>
+
+          <button type="button" class="btn btn-info" onclick="gerarLink()" style="background-color: rgb(227, 197, 255); border: 0.5px rgb(227, 197, 255);">Gerar link de campanha</button>
         </form>
+        <div id="num2">
+
+        </div>
+        </div>
+        
+        </div>
+        
+          
+           
+          
+        
+        </div>
+    </div>
+    
+     
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
         <script src="index.js"></script>
+       
       </body>
       </html>
 </html>
